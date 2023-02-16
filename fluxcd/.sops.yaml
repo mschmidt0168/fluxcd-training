@@ -1,0 +1,7 @@
+creation_rules:
+  - path_regex: .*secret.enc.yaml
+    encrypted_regex: ^(data|stringData)$
+    azure_keyvault: https://hrtrainingoperations.vault.azure.net/keys/sops/ee3e2a6a26654ce7a16335670c6d5570
+    age: age19kyyjnd32na99sn2d4ktqddykrmnghu6tk34fsy9l9duyu2g95ssypk7vy
+  - azure_keyvault: https://hrtrainingoperations.vault.azure.net/keys/sops/ee3e2a6a26654ce7a16335670c6d5570
+    age: age19kyyjnd32na99sn2d4ktqddykrmnghu6tk34fsy9l9duyu2g95ssypk7vy

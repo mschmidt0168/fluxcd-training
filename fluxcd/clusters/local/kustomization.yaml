@@ -1,0 +1,16 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: flux-system 
+
+resources:
+  - azure-key-vault-secret.enc.yaml
+  - git-pull-secret.enc.yaml
+  - flux-components.yaml
+  - flux-sync.yaml
+
+patches:
+  - path: flux-deployment-kustomize-patch.yaml
+    target:
+      kind: Deployment
+      name: kustomize-controller 
