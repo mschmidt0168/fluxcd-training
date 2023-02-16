@@ -7,7 +7,7 @@ metadata:
 spec:
   interval: 1m0s
   ref:
-    branch: master
+    branch: main
   secretRef:
     name: git-pull-secret
   url: ssh://git@collaboration.msi.audi.com:4444/~marcus.schmidt_jambit.com/fluxcd-training.git
