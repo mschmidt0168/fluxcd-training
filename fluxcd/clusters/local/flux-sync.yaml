@@ -10,7 +10,7 @@ spec:
     branch: main
   secretRef:
     name: git-pull-secret
-  url: git@github.com:mschmidt0168/fluxcd-training.git
+  url: ssh://git@github.com:mschmidt0168/fluxcd-training.git
 ---
 apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
 kind: Kustomization
